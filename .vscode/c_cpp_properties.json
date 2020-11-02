@@ -3,10 +3,17 @@
         {
             "name": "Target 1",
             "includePath": [
+                "${workspaceFolder}/",
                 "D:\\Keil_v5\\ARM\\ARMCC\\include",
-                "D:\\Keil_v5\\ARM\\ARMCC\\include\\rw"
+                "D:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
+                "${workspaceFolder}/core",
+                "${workspaceFolder}/init",
+                "${workspaceFolder}/lib/freeRTOS/inc",
+                "${workspaceFolder}/lib/STM32F10x_FWLib/inc"
             ],
             "defines": [
+                "STM32F10X_HD",
+                "USE_STDPERIPH_DRIVER",
                 "__CC_ARM",
                 "__arm__",
                 "__align(x)=",
